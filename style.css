@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&display=swap');
+:root{
+    /*color*/
+    --Very-dark-blue: hsl(233, 47%, 7%);/*main background*/
+    --Dark-desaturated-blue: hsl(244, 38%, 16%); /*card(background*/
+   --Soft-violet:hsl(277, 64%, 61%);/*accent */
+   --White : hsl(0, 0%, 100%);/*(main heading, stats)*/
+   --main-paragraph: hsla(0, 0%, 100%, 0.75);/*(main paragraph)*/
+   --stat-heading : hsla(0, 0%, 100%, 0.6);/*(stat headings)*/
+  /*font*/
+   --font-family1: 'Inter', sans-serif;
+   --font-family: 'Lexend Deca', sans-serif;
+   --font-weight1:400 ;
+   --font-weight2: 700;
+   --font-size:15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Very-dark-blue);
+}
+main{
+    background-color: var(--Dark-desaturated-blue);
+    width: 65%;
+    height: 50%;
+    transform :translate(-50%,-50%);
+     position:fixed;
+     top:50%;
+     left: 50%;
+     border-radius: 8px;
+     display: flex;
+     flex-direction: row;
+}
+.section1{
+ width:  50%;
+ padding-left: 7%;
+
+}
+.section1 h1{
+    font-size: 24px;
+    font-weight: var(--font-weight2);
+    font-family: var(--font-family1);
+    color: var(--White);
+    width: 70%;
+    padding: 40px 0 20px 0;
+    
+}
+.section1 h1 span{
+    color: var(--Soft-violet);
+}
+.section1 p{
+    color: var(--main-paragraph);
+    font-size: 13px;
+    width: 80%;
+    font-weight: var(--font-weight1);
+    font-family:var(--font-family1) ;
+    padding: 0% 0  10% 0;
+}
+.number{
+    display: flex;
+}
+.title{
+    display: flex;
+}
+.section2{
+   
+   background: linear-gradient(
+    0deg,
+    hsla(277, 75%, 61%, 0.6)0%,
+    hsl(277, 64%, 61%,0.6)100%),url(./images/image-header-desktop.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 50%;
+position: relative;
+}
