@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 :root{
     /*color*/
     --Very-dark-blue: hsl(233, 47%, 7%);/*main background*/
@@ -55,14 +55,21 @@ main{
 }
 .section1 p{
     color: var(--main-paragraph);
-    font-size: 13px;
+    font-size: 15px;
     width: 80%;
     font-weight: var(--font-weight1);
     font-family:var(--font-family1) ;
     padding: 0% 0  10% 0;
 }
 .number{
-    display: flex;
+  display: flex;
+  
+}
+.number p{
+    font-size: large;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .title{
     display: flex;
@@ -77,4 +84,65 @@ background-repeat: no-repeat;
 background-size: cover;
 width: 50%;
 position: relative;
+border-radius: 0px 8px 8px 0px;
 }
+
+
+@media screen and (max-width: 375px) {
+    main{
+        height: auto;
+        width: auto;
+    }
+    .main{
+        flex-wrap: wrap-reverse;
+        margin: 20px;
+        width: 100%;
+    }
+    .section1{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+        padding-right: 0px;
+        justify-content: center;
+        margin: 30px;
+    }
+    .section1 p{
+        font-size: 17px;
+    }
+    .section2{
+        width: 100%;
+        height: 320px;
+        background: linear-gradient(
+            0deg,
+            hsla(277, 75%, 61%, 0.6)0%,
+            hsl(277, 64%, 61%,0.6)100%),url(./images/image-header-mobile.jpg);
+        background-size: cover;
+        border-top-left-radius: 8px;
+
+    }
+    .number p{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title p{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1{
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    .section1 span{
+        font-size: 33px;
+        align-items: center;
+    }
+
+}
+
+
